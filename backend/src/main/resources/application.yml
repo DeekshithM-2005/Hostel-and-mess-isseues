@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: hostel-management
+
+  # ── H2 In-Memory Database (default profile) ──
+  datasource:
+    url: jdbc:h2:mem:hosteldb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        web-allow-others: false
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+
+  # ── File Uploads ──
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+
+server:
+  port: 8080
+
+# ── JWT Configuration ──
+jwt:
+  secret: hostel-mgmt-256-bit-secret-key-change-in-production-env-file-minimum-32-chars
+  expiration: 86400000   # 24 hours (ms)
+
+# ── Upload directory ──
+upload:
+  dir: ./uploads

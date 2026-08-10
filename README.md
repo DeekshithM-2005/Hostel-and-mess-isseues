@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Campus HQ — Hostel & Mess Management System
 
 A production-grade, enterprise-ready dashboard application for college campuses. It simplifies hostel room issue reporting, complaint resolution tracking, daily/weekly mess menu display, meal ratings, and mess satisfaction analytics.
@@ -122,3 +123,6 @@ Hostel & Mess Management/
 │   └── package.json            # Frontend modules list
 └── README.md                   # Setup guides and instructions
 ```
+=======
+# Hostel-and-mess-isseues
+>>>>>>> 1f86f710bd4f31bc73049eb59573f295aca7ba16
